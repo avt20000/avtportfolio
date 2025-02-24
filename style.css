@@ -2,8 +2,6 @@
 a:hover{
   color: white;
 }
-
-
 body{
 
     padding: 0;
@@ -23,31 +21,38 @@ body{
 }
 
 .name{
-    margin: 0 auto;
+    margin: 0 ;
     font-family: "podium-soft-variable";
     font-size: 150px;
-    padding: 10px;
+    padding: 50px;
   
-
+    
+  
+}
+.name_work{
+  margin-top: 50px;
+  font-family: "podium-soft-variable";
+  font-size: 75px;
+  padding: 50px;
 }
 
 .name1{
     margin-left: 100px;
+    margin-right: 100px;
     margin-top: 50px;
     font-family: "podium-soft-variable";
     font-size: 75px;
-
+    /* padding: 50px; */
 }
 
 .name2{
   margin-top: 50px;
   font-family: "podium-soft-variable";
   font-size: 75px;
+  padding: 50px;
+  text-align: center;
 
 }
-
-
-
 .body{
   font-family: "alfabet", sans-serif;
   font-size: 35px;
@@ -57,16 +62,16 @@ body{
   margin-left: 100px;
   margin-right: 100px;
 }
-
-
 .web{
   font-family: "alfabet", sans-serif;
   font-style: italic;
   font-size: 35px;
   text-decoration: none;
   color: black;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 50px;
 }
 
@@ -82,9 +87,6 @@ body{
   justify-content: space-around;
   
 }
-
-
-
 .nav{
   font-family: "alfabet", sans-serif;
   font-size: 35px;
@@ -98,6 +100,8 @@ body{
   font-size: 35px;
   text-decoration: none;
   color: black;
+  padding: 50px;
+ 
   &:hover{
     color: orange;
     cursor: pointer;
@@ -137,14 +141,9 @@ body{
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    flex-direction: row;
+    justify-content: center;  /* Centers items horizontally */
+    align-items: center;      /* Optionally centers items vertically */
     margin: 20px;
-
-  
   }
     
   
@@ -164,8 +163,6 @@ body{
   
   }
 
- 
-
   .overlay {
     position: absolute;
     bottom: 0;
@@ -184,9 +181,6 @@ body{
 .cell:hover .overlay{
     opacity: 1;
 }
-
-
-
 .container3{
     background-color:#e74e96 ;
     width: 100%;
@@ -210,6 +204,11 @@ body{
   align-content: center;
   flex-direction: row;
   margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centers items horizontally */
+  align-items: center;      /* Optionally centers items vertically */
+
 }
 
 .gallery2{
@@ -217,7 +216,9 @@ body{
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  margin: 100px;
+  /* margin: 100px; */
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .box{
@@ -232,16 +233,17 @@ body{
 }
 
 .box2{
-  width: 1000px;
-  height: 800px;
+  width: 100%;
+  max-width: 1200px;
+  /* height: 800px; */
   object-fit: cover;
   overflow: hidden;
   margin: 25px;
 }
 
 .box3{
-  width: 1200px;
-  height: 600px;
+  width: 100%;
+  max-width: 1200px;
   object-fit: contain;
   /* overflow: hidden; */
   margin: 25px;
@@ -249,12 +251,20 @@ body{
 }
 
 .box4{
-  width: 1200px;
-  height: 800px;
+  width: 100%;
+  max-width: 1200px;
   object-fit: cover;
   overflow: hidden;
   margin: 25px;
   min-height: auto;
+}
+.box5{
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+  /* overflow: hidden; */
+  margin: 25px;
+  min-height: 25%;
 }
 
 .mydiv {
@@ -269,12 +279,7 @@ body{
     float: left;
    
   }
-
-
-
   
-
-
 .hidden{
   scale: 0%;
   opacity: 0;
@@ -300,24 +305,17 @@ body{
 .bn2{
   float: right;
 }
-
-
-
 .video {
   object-fit: contain;
   opacity: 0.7;
-  transition: opacity 0.3s, transform 0.3s;
+  /* transition: opacity 0.3s, transform 0.3s; */
   transform: scale(0.95);
   align-self: center;
 }
-
-
 .video:hover{
   opacity: 1;
   transform: scale(1);
 }
-
-
 .video2 {
   object-fit: contain;
   opacity: 0.7;
@@ -325,8 +323,6 @@ body{
   transform: scale(0.95);
   align-self: center;
 }
-
-
 .video2:hover{
   opacity: 1;
   transform: scale(1);
@@ -339,9 +335,49 @@ body{
   transform: scale(0.95);
   align-self: center;
 }
-
-
 .video3:hover{
   opacity: 1;
   transform: scale(1);
+}
+@media screen and (max-width: 800px) {
+  .name{
+    font-size: 70px;
+    padding: 30px;
+  }
+  .name_work{
+    font-size: 50px;
+  }
+  .name1{
+    font-size: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .name2{
+    padding: 40px;
+  }
+  .contact{
+    padding: 40px;
+    font-size: 20px;
+  }
+  .bar {
+    font-size: 22px;
+    margin-left: 40px;
+    margin-right: 40px;
+  
+  }
+  .body {
+    font-size: 22px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .nav {
+    font-size: 20px;
+  }
+  .web {
+    font-size: 20px;
+  }
+  .gallery, .gallery2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
