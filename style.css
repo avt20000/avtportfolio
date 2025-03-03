@@ -1,7 +1,5 @@
 
-a:hover{
-  color: #f8b837;
-}
+
 body{
 
     padding: 0;
@@ -93,6 +91,9 @@ body{
   text-decoration: none;
   color: black;
   margin: 25px;
+  &:hover{
+    color: #f8b837;
+      }
 }
 
 .contact{
